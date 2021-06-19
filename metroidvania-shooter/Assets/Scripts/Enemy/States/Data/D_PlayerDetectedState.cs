@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 
-namespace Enemy.States.Data
-{
-	[CreateAssetMenu(fileName = "FILENAME", menuName = "MENUNAME", order = 0)]
+
+
+	
+	[CreateAssetMenu(fileName = "playerDetectedStateData", menuName = "Data/StateData/PlayerDetected State")]	
 	public class D_PlayerDetectedState : ScriptableObject
 	{
-		
+		public float longRangeActionTime = 1.5f;
 	}
-}
+

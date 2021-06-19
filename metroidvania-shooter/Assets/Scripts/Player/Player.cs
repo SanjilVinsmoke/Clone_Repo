@@ -6,11 +6,8 @@ public class Player : MonoBehavoirSingletion<Player>
 {
 	private CharacterController2D controller;
 	private Animator animator;
-	enum MyEnum
-	{
-		walking,shooting
-	}
-	float horizontalMove = 0f;
+	
+	public float horizontalMove = 0f;
 	bool jump = false;
 	bool crouch = false;
 

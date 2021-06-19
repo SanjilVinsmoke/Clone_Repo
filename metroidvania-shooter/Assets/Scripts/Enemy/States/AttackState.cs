@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class AttackState : State
 {
-	protected D_AttackState stateData;
+	protected bool isPlayerDetectedMinAgroRange;
+	protected Transform attackPosition;
 
-	
-	
-	public AttackState(Entity entity, FiniteStateMachine stateMachine, int animBoolName,D_AttackState stateData) : base(entity, stateMachine, animBoolName)
+	protected bool isAnimationFinished;
+
+
+	public AttackState(Entity entity, FiniteStateMachine stateMachine, int animBoolName,Transform attackPosition) : base(entity, stateMachine, animBoolName)
 	{
-		this.stateData = stateData;
+		this.attackPosition = attackPosition;
 	}
 
 	public override void Enter()
 	{
 		base.Enter();
+		entity.atsm.attackState = this;
+		isAnimationFinished = false;
+		entity.SetVelocity(0f);
 	}
 
 	public override void Exit()
@@ -32,13 +37,25 @@ public class AttackState : State
 	public override void PhysicUpdate()
 	{
 		base.PhysicUpdate();
-		Shoot();
-	}
-	public void Shoot()
-	{
-		//TODO:Spawning of Bullet
 	
 	}
+
+	public override void DoChecks()
+	{
+		base.DoChecks();
+		isPlayerDetectedMinAgroRange = entity.CheckPlayerInMinAgroRange();
+	}
+	
+	public virtual void TriggerAttack()
+	{
+
+	}
+
+	public virtual void FinishAttack()
+	{
+		isAnimationFinished = true;
+	}
+	
 
 	
 	

@@ -375,7 +375,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 832800858}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: BulletSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
@@ -457,7 +457,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849168007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.7523575, y: -0.00000014901161, z: -10}
+  m_LocalPosition: {x: 11.642123, y: -0.00000014901161, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 889793691}
@@ -654,7 +654,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1221177496}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -684,7 +684,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1354855807}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CellingCheck
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -919,7 +919,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369232445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.7523575, y: -0.00000014901161, z: -10}
+  m_LocalPosition: {x: 11.642123, y: -0.00000014901161, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 84522210}
@@ -1024,7 +1024,7 @@ GameObject:
   - component: {fileID: 1973713496}
   - component: {fileID: 1973713494}
   - component: {fileID: 1973713493}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1039,7 +1039,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973713489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.93, y: 0, z: 0}
+  m_LocalPosition: {x: 11.82, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2120636454}
@@ -1174,6 +1174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8e543dfdd27aa4bb155bc2d1843121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horizontalMove: 0
 --- !u!114 &1973713496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1200,7 +1201,7 @@ GameObject:
   - component: {fileID: 2120636454}
   - component: {fileID: 2120636456}
   - component: {fileID: 2120636455}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Gunner_Idle_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

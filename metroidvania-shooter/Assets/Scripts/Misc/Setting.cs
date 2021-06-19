@@ -9,10 +9,12 @@ public static class Setting
 	 public static float runSpeed = 30f;
 	 public static int isCrouching;
 	 public static int isJumping;
+	 //Enemies
 	 public static int move;
 	 public static int idle;
 	 public static int playerDetected;
-
+	 public static int look;
+	 public static int charge;
 	 static Setting()
 	 {
 		 isRunning = Animator.StringToHash("isRunning");
@@ -25,6 +27,8 @@ public static class Setting
 		 move = Animator.StringToHash("move");
 		 idle=Animator.StringToHash("idle");
 		 playerDetected = Animator.StringToHash("playerDetected");
+		 look = Animator.StringToHash("look");
+		 charge = Animator.StringToHash("charge");
 	 }
  }
 

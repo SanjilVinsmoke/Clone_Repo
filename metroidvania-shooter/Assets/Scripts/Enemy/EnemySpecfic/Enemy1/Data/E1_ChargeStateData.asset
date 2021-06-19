@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90419d05aa5246369104dfdb44bc32f4, type: 3}
-  m_Name: E1_PlayerDetected
+  m_Script: {fileID: 11500000, guid: 0101b0af66d546a7a61a895aa96e73f0, type: 3}
+  m_Name: E1_ChargeStateData
   m_EditorClassIdentifier: 
-  longRangeActionTime: 1
+  chargeSpeed: 6
+  chargeTime: 1

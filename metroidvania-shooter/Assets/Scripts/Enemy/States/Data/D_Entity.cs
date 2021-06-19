@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "newEntityData", menuName = "Data/EntityData/Base Data ", order = 0)]
+[CreateAssetMenu(fileName = "_EntityData", menuName = "Data/EntityData/Base Data ", order = 0)]
 public class D_Entity : ScriptableObject
 {
 	[Header("Obstacle Check")]
@@ -11,5 +11,8 @@ public class D_Entity : ScriptableObject
 	[Header("Player Check")]
 	public float minAgroDistance =3f;
 	public float maxAgroDistance=4f;
+	public GameObject hitParticle;
+	public float closeRangeActionDistance =1f;
+	public float maxHealth =100f;
 	public LayerMask whatIsPlayer;
 }

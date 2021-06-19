@@ -52,10 +52,16 @@ public class IdelState : State
 	public void SetFlipAfterIdle(bool flip)
 	{
 		flipAfterIdle = flip;
-		isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
+		
 	}
 	public void SetRandomIdleTime()
 	{
 		idleTime = Random.Range(stateData.minIdleTime, stateData.maxIdleTime);
+	}
+
+	public override void DoChecks()
+	{
+		base.DoChecks();
+		isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
 	}
 }

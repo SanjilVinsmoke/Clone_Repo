@@ -3,24 +3,32 @@ using UnityEngine;
 public class Bullets : MonoBehaviour
 {
 	public SO_Bullet soBullet;
-	private Rigidbody2D rigidbody2D;
-
-	private void Awake()
+	public Rigidbody2D rb;
+	public AttackDetails attackDetails;
+	protected virtual void Awake()
 	{
-		rigidbody2D = GetComponent<Rigidbody2D>();
+		rb = GetComponent<Rigidbody2D>();
 	}
-	private void Update()
+	protected virtual void Update()
 	{
-		rigidbody2D.velocity = transform.right * soBullet.speedOfBullet;
-		if (transform.position.x>40||transform.position.x<-40)
+		if (transform.position.x>40||transform.position.x< -40)
 		{
 			Destroy(gameObject);
 		}
 	}
-	private void OnTriggerEnter2D(Collider2D other)
+	protected virtual void FixedUpdate()
 	{
-		Debug.Log(other.name);
-		Destroy(gameObject);
+		if (transform.position.x>40||transform.position.x< -40)
+		{
+			Destroy(gameObject);
+		}
 	}
+	public void FireProjectile(float speed, float damage)
+	{
+		soBullet.speedOfBullet = speed;
+		attackDetails.damageAmount = damage;
+	}
+
+
 }
 

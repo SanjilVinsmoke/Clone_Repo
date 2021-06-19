@@ -1,6 +1,7 @@
 ﻿
 
 
+	using System;
 	using UnityEngine;
 	public class State
 	{
@@ -19,6 +20,7 @@
 		}
 		public virtual void Enter()
 		{
+			DoChecks();
 			startTime = Time.time;
 			entity.animator.SetBool(animBoolName,true);
 		}
@@ -31,6 +33,10 @@
 			
 		}
 		public virtual void PhysicUpdate()
+		{
+			DoChecks();
+		}
+		public virtual void DoChecks()
 		{
 			
 		}

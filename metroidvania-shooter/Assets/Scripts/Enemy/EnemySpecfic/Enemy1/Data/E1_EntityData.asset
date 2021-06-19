@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: E1_EntityData
   m_EditorClassIdentifier: 
   ledgeCheckDistance: 0.2
-  WallCheckDistance: 0.2
+  wallCheckDistance: 0.4
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  minAgroDistance: 4
+  maxAgroDistance: 7
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 512

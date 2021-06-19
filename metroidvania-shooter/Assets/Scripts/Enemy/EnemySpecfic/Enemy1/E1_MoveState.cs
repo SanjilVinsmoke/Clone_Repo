@@ -3,8 +3,8 @@
 public class E1_MoveState : MoveState
 {
 	private Enemy1 enemy;
-	private D_MoveState moveStateData;
-
+	
+	
 
 	public E1_MoveState(Entity entity, FiniteStateMachine stateMachine, int animBoolName, D_MoveState stateData, Enemy1 enemy) : base(entity, stateMachine, animBoolName, stateData)
 	{
@@ -39,5 +39,6 @@ public class E1_MoveState : MoveState
 	public override void PhysicUpdate()
 	{
 		base.PhysicUpdate();
+		
 	}
 }
